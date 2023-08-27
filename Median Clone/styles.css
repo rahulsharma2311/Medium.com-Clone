@@ -1,0 +1,394 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+
+
+:root {
+  --navbar-height: 60px;
+}
+
+/* ------------------------------nav bar---------------------------------------- */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+
+}
+
+#logo {
+  margin: 10px 10px 5px 5px;
+
+}
+
+#logo img {
+  height: 60px;
+  margin-top: 13px;
+  margin-left: 150px;
+
+}
+
+#logo h1 {
+  font-size: 30px;
+  margin-top: -52px;
+  margin-left: 220px;
+}
+
+
+#navbar ul {
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 450px;
+
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgb(245 180 7);
+  position: absolute;
+  height: 140%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 20px;
+  margin-top: 27px;
+  /* font-weight: 2%; */
+
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: black;
+
+}
+
+#navbar ul li a:hover {
+  color: white;
+  background-color: black;
+
+}
+
+.line {
+  margin-top: 37px;
+  border: 1px solid rgb(62, 60, 60);
+
+}
+
+#first_page::before {
+  content: "";
+  /* background-color: rgba(245, 213, 7, 0.895);*/
+  background-color: rgb(245 180 7);
+  position: absolute;
+  height: 77%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+}
+
+#first_page h1 {
+  font-size: 110px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+#first_page p {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+button.strt {
+  margin-left: 200px;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  width: 250px;
+}
+
+button.strt:hover {
+
+  background-color: rgb(170, 162, 162);
+  color: black;
+  border: none;
+  transition: all 0.75s ease 0.01s;
+
+
+}
+
+.end {
+  margin-top: 67px;
+  border: 1px solid rgb(61, 55, 55);
+
+}
+
+/* -----------------------------------------Trending on Media Page------------------------------------ */
+
+#media::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 693px;
+  left: 0px;
+}
+
+
+#med {
+  margin-left: 150px;
+  font-size: 25px;
+  margin-top: -35px;
+  margin-bottom: -50px;
+}
+
+#media img {
+  height: 30px;
+  width: 35px;
+  margin-left: 100px;
+  margin-top: 50px;
+
+}
+
+.container {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-left: -130px;
+  /* width: 300px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* margin-left: 10px; */
+  column-gap: 120px;
+  padding: 10px 10%;
+}
+
+.container .box-container .box {
+  box-shadow: 0px 5px 10px rgb(247, 244, 244);
+  border: 1px solid white;
+  padding: 30px 10px;
+  border-radius: 6px;
+  margin-top: -7px;
+  padding-bottom: -50px;
+  width: 200px;
+  height: 200px;
+}
+
+.container .box h3 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin-left: 100px;
+  padding: 10px 0px;
+  width: 400px;
+}
+
+.container .box .lorem {
+  color: black;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 0px;
+  line-height: 1.8;
+  margin-top: -40px;
+  margin-left: 140px;
+}
+
+
+.container .box .img {
+  margin-left: 10px;
+}
+
+.container .box .time {
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0px;
+  line-height: 1.8;
+  margin-left: 100px;
+}
+
+.hr_2 {
+  border: 1px solid rgb(228, 226, 226);
+  margin-top: 80px;
+}
+
+/* ---------------------------------------Blogs Side Page------------------------------------------------- */
+
+.container_2 {
+  width: 60%;
+  height: 1000px;
+  /* border: 1px solid #fff; */
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+
+.container_2 .box-container_2 {
+  width: 100%;
+  height: 1100px;
+  margin-top: 25px;
+  /* display:; */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  /* padding-bottom: 5px; */
+}
+
+.container_2 .box-container_2::-webkit-scrollbar {
+  display: none;
+}
+
+.container_2 .box-container_2 li {
+  min-width: 140px;
+  height: 350px;
+  list-style-type: none;
+  margin-right: 10px;
+}
+.container_2 .box-container_2 li .img_blog {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -850px;
+}
+
+
+.container_2 .box-container_2 li h3 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  padding: 10px 0px;
+  width: 550px;
+}
+
+.container_2 .box-container_2 li .lorem {
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 5px 0px;
+  line-height: 1.8;
+  margin-left: 60px;
+  margin-top: -35px;
+
+}
+
+.container_2 .box-container_2 li .para {
+  color: rgb(79, 73, 73);
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 550px;
+  /* font-weight: 700; */
+  padding: 5px 0px;
+}
+
+.container_2 .box-container_2 li .time {
+  color: rgb(79, 73, 73);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0px;
+  line-height: 1.8;
+  margin-top: -45px;
+}
+
+
+#blog_image {
+  margin-left: 600px;
+  margin-top: -120px;
+}
+
+.trends_butt {
+  width: 130px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 15px;
+  border: none;
+}
+
+.trends_butt a {
+  text-decoration: none;
+  
+  color: black;
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 15px;
+}
+
+
+
+/* ------------------------------------------------Footer section--------------------------------------- */
+.footer {
+  display: grid;
+}
+
+#topic_side {
+  margin-left: 950px;
+  padding: 10px;
+  margin-top: -1100px;
+  display: block;
+  width: 430px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+#topics {
+  text-decoration: none;
+  color: green;
+  margin-left: 10px;
+}
+
+.links a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(74, 70, 70);
+  font-size: 18px;
+  margin-left: -15px;
+  
+}
+.last{
+  width: 430px;
+}
+
+.Copyright {
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  background-color: black;
+  width: 163%;
+  margin-left: -100px;
+}
